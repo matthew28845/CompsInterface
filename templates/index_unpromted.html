@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Technical Problem Description Form</h1>
+        <p class="subtitle">Research Study on Technical Communication</p>
+
+        <form action="/submit" method="POST">
+            <div class="form-section">
+                <label for="problem_description">Explain the problem(s) you encountered that resulted in not being able to complete the task in time. Be as explicit and detailed as possible!</label>
+                <textarea id="problem_description" name="problem_description" rows="10" required></textarea>
+            </div>
+
+            <button type="submit">Submit Response</button>
+        </form>
+    </div>
+</body>
+</html>
